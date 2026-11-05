@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones - SmartPalm</title>
+  <meta name="description" content="Términos y Condiciones de Uso de SmartPalm - Plataforma AgTech para monitoreo de cultivos de palma aceitera.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+=========================== -->
+<header class="header" id="mainHeader">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌴</div>
+        SmartPalm
+      </a>
+
+      <span class="page-badge badge-green">Para Agricultores</span>
+
+      <ul class="nav-links">
+        <li><a href="index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="index.html#problema" data-i18n="nav.problema">Problema</a></li>
+        <li><a href="index.html#como-funciona" data-i18n="nav.como-funciona">Cómo funciona</a></li>
+        <li><a href="index.html#beneficios" data-i18n="nav.beneficios">Beneficios</a></li>
+        <li><a href="index.html#planes" data-i18n="nav.planes">Planes</a></li>
+        <li><a href="index.html#nosotros" data-i18n="nav.equipo">Nosotros</a></li>
+        <li><a href="agronomo.html" data-i18n="nav.agronomo">Agrónomo</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" id="langToggle" onclick="toggleLang()">
+          <div class="lang-slider"></div>
+          <span class="lang-opt active" data-lang="es">ES</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </div>
+        <a href="index.html" class="btn btn-primary" data-i18n="nav.cta">Descargar App</a>
+      </div>
+
+      <div class="nav-hamburger" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================
+     MOBILE NAV
+=========================== -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="closeMobileNav()">×</button>
+  <a href="index.html#inicio" onclick="closeMobileNav()" data-i18n="nav.inicio">Inicio</a>
+  <a href="index.html#problema" onclick="closeMobileNav()" data-i18n="nav.problema">Problema</a>
+  <a href="index.html#como-funciona" onclick="closeMobileNav()" data-i18n="nav.como-funciona">Cómo funciona</a>
+  <a href="index.html#beneficios" onclick="closeMobileNav()" data-i18n="nav.beneficios">Beneficios</a>
+  <a href="index.html#planes" onclick="closeMobileNav()" data-i18n="nav.planes">Planes</a>
+  <a href="index.html#nosotros" onclick="closeMobileNav()" data-i18n="nav.equipo">Nosotros</a>
+  <a href="agronomo.html" data-i18n="nav.agronomo">Agrónomo</a>
+  <a href="index.html" class="btn btn-primary" data-i18n="nav.cta">Descargar App</a>
+</div>
+
+<main>
+  <!-- ============================
+       HERO SECTION
+  ============================ -->
+  <section class="legal-hero">
+    <div class="container">
+      <div class="legal-hero-content">
+        <div class="legal-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="legal.badge">Documento Legal</span>
+        </div>
+        <h1 class="legal-title" data-i18n="legal.terms.title">Términos y Condiciones de Uso</h1>
+        <p class="legal-subtitle" data-i18n="legal.lastUpdated">Última actualización: Julio 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TABLE OF CONTENTS
+  ============================ -->
+  <section class="section">
+    <div class="container">
+      <div class="toc-container">
+        <h2 class="toc-title" data-i18n="legal.toc.title">Tabla de Contenidos</h2>
+        <nav class="toc-nav">
+          <a href="#seccion-1" class="toc-link">
+            <span class="toc-number">01</span>
+            <span data-i18n="terms.toc.s1">Introducción y Aceptación de los Términos</span>
+          </a>
+          <a href="#seccion-2" class="toc-link">
+            <span class="toc-number">02</span>
+            <span data-i18n="terms.toc.s2">Descripción del Servicio</span>
+          </a>
+          <a href="#seccion-3" class="toc-link">
+            <span class="toc-number">03</span>
+            <span data-i18n="terms.toc.s3">Registro y Cuentas de Usuario</span>
+          </a>
+          <a href="#seccion-4" class="toc-link">
+            <span class="toc-number">04</span>
+            <span data-i18n="terms.toc.s4">Planes de Suscripción, Facturación y Pagos</span>
+          </a>
+          <a href="#seccion-5" class="toc-link">
+            <span class="toc-number">05</span>
+            <span data-i18n="terms.toc.s5">Responsabilidad y Limitación de Garantías</span>
+          </a>
+          <a href="#seccion-6" class="toc-link">
+            <span class="toc-number">06</span>
+            <span data-i18n="terms.toc.s6">Propiedad Intelectual</span>
+          </a>
+          <a href="#seccion-7" class="toc-link">
+            <span class="toc-number">07</span>
+            <span data-i18n="terms.toc.s7">Privacidad y Uso de Datos Agronómicos</span>
+          </a>
+          <a href="#seccion-8" class="toc-link">
+            <span class="toc-number">08</span>
+            <span data-i18n="terms.toc.s8">Modificaciones a los Términos</span>
+          </a>
+          <a href="#seccion-9" class="toc-link">
+            <span class="toc-number">09</span>
+            <span data-i18n="terms.toc.s9">Ley Aplicable y Resolución de Disputas</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       LEGAL CONTENT
+  ============================ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="legal-content">
+
+        <!-- Sección 1 -->
+        <div class="legal-section" id="seccion-1">
+          <div class="legal-section-header">
+            <span class="legal-section-number">01</span>
+            <h2 data-i18n="terms.s1.title">Introducción y Aceptación de los Términos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s1.p1">Bienvenido a <strong>SmartPalm</strong>, una plataforma y ecosistema tecnológico desarrollado por la startup <strong>TempWise</strong>. Los presentes Términos y Condiciones regulan el acceso y uso de nuestra plataforma web, aplicación móvil y dispositivos IoT (hardware) asociados al monitoreo de cultivos de palma aceitera.</p>
+            <p data-i18n="terms.s1.p2">Al acceder, navegar o utilizar nuestros servicios, usted acepta estar legalmente vinculado por estos Términos. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestros servicios.</p>
+          </div>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="legal-section" id="seccion-2">
+          <div class="legal-section-header">
+            <span class="legal-section-number">02</span>
+            <h2 data-i18n="terms.s2.title">Descripción del Servicio</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s2.p1">SmartPalm proporciona una solución integral AgTech para el monitoreo en tiempo real de cultivos de palma aceitera en la Amazonía peruana. El servicio incluye:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s2.l1">Despliegue de dispositivos IoT en el campo equipados con sensores (humedad, temperatura, nutrientes, etc.).</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s2.l2">Acceso a la <strong>Aplicación Móvil</strong> (orientada a los dueños de cultivo y operarios de campo) para gestión de tareas, alertas y monitoreo offline.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s2.l3">Acceso a la <strong>Plataforma Web / Dashboard</strong> (orientada a ingenieros agrónomos) para análisis profundo, gestión de cuadrillas y visualización de métricas avanzadas.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s2.l4">Sistema de recomendaciones agronómicas y alertas tempranas para la prevención de enfermedades como la <em>Marchitez Sorpresiva</em>, basados en modelos paramétricos.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 3 -->
+        <div class="legal-section" id="seccion-3">
+          <div class="legal-section-header">
+            <span class="legal-section-number">03</span>
+            <h2 data-i18n="terms.s3.title">Registro y Cuentas de Usuario</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s3.p1">Para utilizar SmartPalm, los usuarios deben registrarse y crear una cuenta. Al crear una cuenta, usted se compromete a:</p>
+            <ol class="legal-list-ordered">
+              <li data-i18n="terms.s3.l1">Proporcionar información precisa, actual y completa sobre su identidad, rol (productor agrícola o ingeniero agrónomo) y extensión de su parcela (hectáreas).</li>
+              <li data-i18n="terms.s3.l2">Mantener la seguridad y confidencialidad de sus credenciales de acceso.</li>
+              <li data-i18n="terms.s3.l3">Notificar inmediatamente a TempWise sobre cualquier uso no autorizado de su cuenta.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Sección 4 -->
+        <div class="legal-section" id="seccion-4">
+          <div class="legal-section-header">
+            <span class="legal-section-number">04</span>
+            <h2 data-i18n="terms.s4.title">Planes de Suscripción, Facturación y Pagos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s4.p1">El uso del software y ecosistema de SmartPalm se rige por un modelo SaaS (Software as a Service) sin capa gratuita, justificado por el retorno de inversión (ROI) en la mejora de la productividad del cultivo. Los detalles de facturación son los siguientes:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s4.l1"><strong>Estructura de Planes:</strong> Los usuarios deberán suscribirse a uno de nuestros planes comerciales (<strong>Plan Semilla, Plan Cosecha, o Plan Palma Pro</strong>), los cuales varían en función de la cantidad de hectáreas cubiertas, el número de dispositivos IoT desplegados y el nivel de soporte agronómico.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s4.l2"><strong>Facturación:</strong> Los pagos se procesan de manera periódica (mensual o anual) y por adelantado. Las tarifas están sujetas a cambios con previo aviso de 30 días.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s4.l3"><strong>Hardware:</strong> El costo de la suscripción puede incluir el comodato o alquiler de los nodos sensores, los cuales siguen siendo propiedad de TempWise a menos que se especifique lo contrario en el contrato comercial.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 5 -->
+        <div class="legal-section" id="seccion-5">
+          <div class="legal-section-header">
+            <span class="legal-section-number">05</span>
+            <h2 data-i18n="terms.s5.title">Responsabilidad y Limitación de Garantías Agrícolas</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s5.p1">Dada la naturaleza de la actividad agrícola, TempWise establece las siguientes limitaciones fundamentales:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s5.l1"><strong>Recomendaciones Referenciales:</strong> Las sugerencias y alertas emitidas por el motor agronómico de SmartPalm (calibrado con datos del INIA) son herramientas de apoyo a la toma de decisiones. No sustituyen el criterio profesional de un ingeniero agrónomo en campo.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s5.l2"><strong>Riesgos Naturales:</strong> TempWise no garantiza un aumento específico en el rendimiento (toneladas por hectárea) ni asegura la erradicación total de plagas. La empresa no será responsable por pérdidas de cosechas, daños derivados de condiciones climáticas extremas, mala ejecución operativa por parte del usuario o casos de fuerza mayor.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s5.l3"><strong>Operación de Hardware:</strong> El sistema está diseñado para operar bajo un esquema de edge computing y redes offline. Sin embargo, TempWise no se hace responsable por interrupciones del servicio derivadas de daños físicos intencionales al hardware por parte de terceros o eventos fortuitos severos en la Amazonía.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 6 -->
+        <div class="legal-section" id="seccion-6">
+          <div class="legal-section-header">
+            <span class="legal-section-number">06</span>
+            <h2 data-i18n="terms.s6.title">Propiedad Intelectual</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s6.p1">Todo el contenido, diseños de interfaces de usuario (UI), código fuente, algoritmos del motor de reglas agronómicas, diseño de circuitos integrados y marca de <strong>SmartPalm</strong> y <strong>TempWise</strong> son propiedad exclusiva de la empresa y están protegidos por las leyes de propiedad intelectual.</p>
+            <p data-i18n="terms.s6.p2">Está estrictamente prohibida la ingeniería inversa de nuestros dispositivos IoT o la copia no autorizada de nuestra plataforma web y móvil.</p>
+          </div>
+        </div>
+
+        <!-- Sección 7 -->
+        <div class="legal-section" id="seccion-7">
+          <div class="legal-section-header">
+            <span class="legal-section-number">07</span>
+            <h2 data-i18n="terms.s7.title">Privacidad y Uso de Datos Agronómicos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s7.p1">La recopilación y procesamiento de datos está sujeta a nuestra Política de Privacidad. Al utilizar SmartPalm, usted acepta que:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s7.l1">TempWise recopilará datos ambientales, métricas de suelo y registros de productividad de sus parcelas.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s7.l2">Estos datos pueden ser anonimizados y agregados para mejorar nuestros modelos predictivos de enfermedades y optimizar el sistema general en beneficio de todos los agricultores de la región.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="terms.s7.l3">TempWise no venderá la información comercial o financiera específica de su predio a terceros sin su consentimiento explícito.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 8 -->
+        <div class="legal-section" id="seccion-8">
+          <div class="legal-section-header">
+            <span class="legal-section-number">08</span>
+            <h2 data-i18n="terms.s8.title">Modificaciones a los Términos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s8.p1">TempWise se reserva el derecho de actualizar o modificar estos Términos y Condiciones en cualquier momento. Los cambios sustanciales serán notificados a los usuarios a través del Dashboard web o mediante correo electrónico. El uso continuado del servicio después de dichos cambios constituye la aceptación de los nuevos términos.</p>
+          </div>
+        </div>
+
+        <!-- Sección 9 -->
+        <div class="legal-section" id="seccion-9">
+          <div class="legal-section-header">
+            <span class="legal-section-number">09</span>
+            <h2 data-i18n="terms.s9.title">Ley Aplicable y Resolución de Disputas</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="terms.s9.p1">Estos Términos se regirán e interpretarán de acuerdo con las leyes de la República del Perú. Cualquier disputa, controversia o reclamación que surja de, o esté relacionada con, el uso de SmartPalm o la interpretación de estos términos, será sometida a la jurisdicción exclusiva de los jueces y tribunales de la ciudad de Lima.</p>
+            <p class="legal-updated"><em data-i18n="terms.s9.p2">Última actualización: Julio 2026.</em></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================
+     FOOTER
+=========================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🌴 SmartPalm</div>
+        <p>Digitalizando el corazón de la Amazonía para un futuro sostenible y productivo.</p>
+        <div class="footer-cta">
+          <a href="index.html" class="btn btn-amber btn-lg">Descargar App</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h5>Enlaces</h5>
+        <nav>
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#problema">Problema</a>
+          <a href="index.html#como-funciona">Cómo funciona</a>
+          <a href="index.html#beneficios">Beneficios</a>
+          <a href="index.html#planes">Planes</a>
+          <a href="index.html#nosotros">Nosotros</a>
+        </nav>
+      </div>
+
+      <div class="footer-social">
+        <h5>Síguenos</h5>
+        <nav>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">YouTube</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 TempWise S.A.C. · Lima, Perú</p>
+      <div class="footer-legal-links">
+<a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad - SmartPalm</title>
+  <meta name="description" content="Política de Privacidad de SmartPalm - Plataforma AgTech para monitoreo de cultivos de palma aceitera.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+=========================== -->
+<header class="header" id="mainHeader">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌴</div>
+        SmartPalm
+      </a>
+
+      <span class="page-badge badge-green">Para Agricultores</span>
+
+      <ul class="nav-links">
+        <li><a href="index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="index.html#problema" data-i18n="nav.problema">Problema</a></li>
+        <li><a href="index.html#como-funciona" data-i18n="nav.como-funciona">Cómo funciona</a></li>
+        <li><a href="index.html#beneficios" data-i18n="nav.beneficios">Beneficios</a></li>
+        <li><a href="index.html#planes" data-i18n="nav.planes">Planes</a></li>
+        <li><a href="index.html#nosotros" data-i18n="nav.equipo">Nosotros</a></li>
+        <li><a href="agronomo.html" data-i18n="nav.agronomo">Agrónomo</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" id="langToggle" onclick="toggleLang()">
+          <div class="lang-slider"></div>
+          <span class="lang-opt active" data-lang="es">ES</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </div>
+        <a href="index.html" class="btn btn-primary" data-i18n="nav.cta">Descargar App</a>
+      </div>
+
+      <div class="nav-hamburger" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================
+     MOBILE NAV
+=========================== -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="closeMobileNav()">×</button>
+  <a href="index.html#inicio" onclick="closeMobileNav()" data-i18n="nav.inicio">Inicio</a>
+  <a href="index.html#problema" onclick="closeMobileNav()" data-i18n="nav.problema">Problema</a>
+  <a href="index.html#como-funciona" onclick="closeMobileNav()" data-i18n="nav.como-funciona">Cómo funciona</a>
+  <a href="index.html#beneficios" onclick="closeMobileNav()" data-i18n="nav.beneficios">Beneficios</a>
+  <a href="index.html#planes" onclick="closeMobileNav()" data-i18n="nav.planes">Planes</a>
+  <a href="index.html#nosotros" onclick="closeMobileNav()" data-i18n="nav.equipo">Nosotros</a>
+  <a href="agronomo.html" data-i18n="nav.agronomo">Agrónomo</a>
+  <a href="index.html" class="btn btn-primary" data-i18n="nav.cta">Descargar App</a>
+</div>
+
+<main>
+  <!-- ============================
+       HERO SECTION
+  ============================ -->
+  <section class="legal-hero">
+    <div class="container">
+      <div class="legal-hero-content">
+        <div class="legal-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="legal.badge">Documento Legal</span>
+        </div>
+        <h1 class="legal-title" data-i18n="legal.privacy.title">Política de Privacidad</h1>
+        <p class="legal-subtitle" data-i18n="legal.lastUpdated">Última actualización: Julio 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TABLE OF CONTENTS
+  ============================ -->
+  <section class="section">
+    <div class="container">
+      <div class="toc-container">
+        <h2 class="toc-title" data-i18n="legal.toc.title">Tabla de Contenidos</h2>
+        <nav class="toc-nav">
+          <a href="#seccion-1" class="toc-link">
+            <span class="toc-number">01</span>
+            <span data-i18n="privacy.toc.s1">Introducción</span>
+          </a>
+          <a href="#seccion-2" class="toc-link">
+            <span class="toc-number">02</span>
+            <span data-i18n="privacy.toc.s2">Información que Recopilamos</span>
+          </a>
+          <a href="#seccion-3" class="toc-link">
+            <span class="toc-number">03</span>
+            <span data-i18n="privacy.toc.s3">Cómo Utilizamos su Información</span>
+          </a>
+          <a href="#seccion-4" class="toc-link">
+            <span class="toc-number">04</span>
+            <span data-i18n="privacy.toc.s4">Intercambio y Transferencia de Datos</span>
+          </a>
+          <a href="#seccion-5" class="toc-link">
+            <span class="toc-number">05</span>
+            <span data-i18n="privacy.toc.s5">Almacenamiento y Seguridad de Datos</span>
+          </a>
+          <a href="#seccion-6" class="toc-link">
+            <span class="toc-number">06</span>
+            <span data-i18n="privacy.toc.s6">Sus Derechos (Derechos ARCO)</span>
+          </a>
+          <a href="#seccion-7" class="toc-link">
+            <span class="toc-number">07</span>
+            <span data-i18n="privacy.toc.s7">Retención de Datos</span>
+          </a>
+          <a href="#seccion-8" class="toc-link">
+            <span class="toc-number">08</span>
+            <span data-i18n="privacy.toc.s8">Cambios a esta Política</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       LEGAL CONTENT
+  ============================ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="legal-content">
+
+        <!-- Sección 1 -->
+        <div class="legal-section" id="seccion-1">
+          <div class="legal-section-header">
+            <span class="legal-section-number">01</span>
+            <h2 data-i18n="privacy.s1.title">Introducción</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s1.p1">En <strong>TempWise</strong> ("nosotros", "nuestro" o "la Empresa"), valoramos y respetamos su privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos, almacenamos, compartimos y protegemos su información personal y agronómica cuando utiliza nuestra plataforma <strong>SmartPalm</strong> (incluyendo nuestro sitio web, plataforma web para agrónomos, aplicación móvil para productores y dispositivos IoT desplegados en campo).</p>
+          </div>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="legal-section" id="seccion-2">
+          <div class="legal-section-header">
+            <span class="legal-section-number">02</span>
+            <h2 data-i18n="privacy.s2.title">Información que Recopilamos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s2.p1">Para proporcionar nuestros servicios de agricultura de precisión orientados a la palma aceitera, recopilamos los siguientes tipos de datos:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s2.l1"><strong>Datos de Registro y Cuenta:</strong> Nombres y apellidos, dirección de correo electrónico, rol (Dueño del Cultivo o Ingeniero Agrónomo), ubicación geográfica de la plantación (ej. región Ucayali, Huánuco) y tamaño del predio (hectáreas).</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s2.l2"><strong>Datos Agronómicos y Sensoriales (IoT):</strong> Información capturada continuamente por nuestros nodos en campo, que incluye humedad del suelo, temperatura, pH, conductividad eléctrica, imágenes del follaje y registros de plagas/enfermedades (como la Marchitez Sorpresiva).</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s2.l3"><strong>Datos de Operación e Intervención:</strong> Registros de labores agronómicas, aplicaciones de fertilizantes, reportes técnicos, observaciones en campo y rendimientos de Racimos de Fruta Fresca (RFF).</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s2.l4"><strong>Datos Técnicos y de Uso:</strong> Información sobre el dispositivo desde el que accede, dirección IP, tipo de navegador e historial de interacción con la plataforma web y la app móvil.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 3 -->
+        <div class="legal-section" id="seccion-3">
+          <div class="legal-section-header">
+            <span class="legal-section-number">03</span>
+            <h2 data-i18n="privacy.s3.title">Cómo Utilizamos su Información</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s3.p1">La información recopilada se utiliza exclusivamente para los siguientes propósitos:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s3.l1">Proveer, operar y mantener el ecosistema de SmartPalm, asegurando que las alertas tempranas y los umbrales agronómicos funcionen correctamente.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s3.l2">Facilitar el intercambio seguro de información y reportes técnicos entre el Dueño del Cultivo y el Ingeniero Agrónomo asignado a la plantación.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s3.l3">Procesar los pagos correspondientes a su suscripción (Plan Semilla, Cosecha o Palma Pro) mediante pasarelas de pago seguras.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s3.l4">Enviar notificaciones push críticas sobre el estado de su cultivo o cambios en la plataforma.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 4 -->
+        <div class="legal-section" id="seccion-4">
+          <div class="legal-section-header">
+            <span class="legal-section-number">04</span>
+            <h2 data-i18n="privacy.s4.title">Intercambio y Transferencia de Datos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s4.p1">No vendemos ni alquilamos su información personal ni los datos productivos de su parcela a terceros. Solo compartiremos su información bajo las siguientes circunstancias:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s4.l1"><strong>Con usuarios vinculados:</strong> Si usted es un Productor, sus datos sensoriales e historial serán compartidos con el Ingeniero Agrónomo al que usted haya invitado explícitamente mediante la plataforma.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s4.l2"><strong>Con proveedores de servicios:</strong> Compartimos datos estrictamente necesarios con proveedores de infraestructura en la nube (alojamiento de bases de datos) y pasarelas de pago externas, los cuales operan bajo estrictos acuerdos de confidencialidad.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s4.l3"><strong>Por requerimiento legal:</strong> Cuando sea exigido por autoridades competentes de acuerdo con la legislación peruana vigente.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 5 -->
+        <div class="legal-section" id="seccion-5">
+          <div class="legal-section-header">
+            <span class="legal-section-number">05</span>
+            <h2 data-i18n="privacy.s5.title">Almacenamiento y Seguridad de Datos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s5.p1">La información es procesada y almacenada utilizando infraestructura en la nube segura (como PostgreSQL) con cifrado en reposo y en tránsito. Contamos con mecanismos de autenticación y autorización basados en roles para garantizar que solo los usuarios permitidos accedan a los datos de una plantación específica.</p>
+            <p data-i18n="privacy.s5.p2">En zonas sin conectividad, los datos son almacenados temporalmente de forma segura en los nodos Edge hasta su sincronización.</p>
+          </div>
+        </div>
+
+        <!-- Sección 6 -->
+        <div class="legal-section" id="seccion-6">
+          <div class="legal-section-header">
+            <span class="legal-section-number">06</span>
+            <h2 data-i18n="privacy.s6.title">Sus Derechos (Derechos ARCO)</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s6.p1">De conformidad con la Ley de Protección de Datos Personales del Perú (Ley N° 29733), usted tiene el derecho de:</p>
+            <ul class="legal-list">
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s6.l1"><strong>Acceder</strong> a la información que tenemos sobre usted y su plantación.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s6.l2"><strong>Rectificar</strong> cualquier dato inexacto o desactualizado en su perfil.</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s6.l3"><strong>Cancelar</strong> su cuenta y solicitar la eliminación de su información personal. (Nota: Los datos sensoriales previamente anonimizados y agregados para el modelo de IA no podrán ser eliminados).</span>
+              </li>
+              <li class="legal-list-item">
+                <span class="legal-list-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--green-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="legal-list-text" data-i18n="privacy.s6.l4"><strong>Oponerse</strong> al tratamiento de sus datos para fines distintos al servicio esencial de SmartPalm.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sección 7 -->
+        <div class="legal-section" id="seccion-7">
+          <div class="legal-section-header">
+            <span class="legal-section-number">07</span>
+            <h2 data-i18n="privacy.s7.title">Retención de Datos</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s7.p1">Conservaremos su información personal e historial agronómico mientras su cuenta y suscripción permanezcan activas. Si decide archivar una plantación o cancelar su suscripción, sus datos dejarán de estar visibles, pero se conservarán de acuerdo con nuestras políticas de retención para cumplir con obligaciones legales o resolver disputas.</p>
+          </div>
+        </div>
+
+        <!-- Sección 8 -->
+        <div class="legal-section" id="seccion-8">
+          <div class="legal-section-header">
+            <span class="legal-section-number">08</span>
+            <h2 data-i18n="privacy.s8.title">Cambios a esta Política</h2>
+          </div>
+          <div class="legal-section-body">
+            <p data-i18n="privacy.s8.p1">TempWise se reserva el derecho de actualizar esta Política de Privacidad en función de mejoras tecnológicas o cambios legislativos. Cualquier modificación sustancial será notificada a través del Dashboard web o la Aplicación Móvil, o mediante un correo electrónico a la dirección registrada en su cuenta.</p>
+            <p class="legal-updated"><em data-i18n="privacy.s8.p2">Última actualización: Julio 2026</em></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================
+     FOOTER
+=========================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🌴 SmartPalm</div>
+        <p>Digitalizando el corazón de la Amazonía para un futuro sostenible y productivo.</p>
+        <div class="footer-cta">
+          <a href="index.html" class="btn btn-amber btn-lg">Descargar App</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h5>Enlaces</h5>
+        <nav>
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#problema">Problema</a>
+          <a href="index.html#como-funciona">Cómo funciona</a>
+          <a href="index.html#beneficios">Beneficios</a>
+          <a href="index.html#planes">Planes</a>
+          <a href="index.html#nosotros">Nosotros</a>
+        </nav>
+      </div>
+
+      <div class="footer-social">
+        <h5>Síguenos</h5>
+        <nav>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">YouTube</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 TempWise S.A.C. · Lima, Perú</p>
+      <div class="footer-legal-links">
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

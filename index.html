@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartPalm – Cuida tu palma, protege tu ingreso</title>
+  <meta name="description" content="SmartPalm te alerta cuando tu palma necesita atención, aunque estés en medio de la Amazonía sin internet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+============================ -->
+<header class="header" id="mainHeader">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌴</div>
+        SmartPalm
+      </a>
+
+      <span class="page-badge badge-green" data-i18n="nav.badge.farmer">🌴 Para Agricultores</span>
+
+      <ul class="nav-links">
+        <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="#problema" data-i18n="nav.problema">Problema</a></li>
+        <li><a href="#como-funciona" data-i18n="nav.como-funciona">Cómo funciona</a></li>
+        <li><a href="#beneficios" data-i18n="nav.beneficios">Beneficios</a></li>
+        <li><a href="#planes" data-i18n="nav.planes">Planes</a></li>
+        <li><a href="#nosotros" data-i18n="nav.equipo">Nosotros</a></li>
+        <li><a href="agronomo.html" data-i18n="nav.agronomo">Agrónomo</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" id="langToggle" onclick="toggleLang()">
+          <div class="lang-slider"></div>
+          <span class="lang-opt active" data-lang="es">ES</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </div>
+        <a href="#" class="btn btn-primary" data-i18n="nav.cta">Descargar App</a>
+      </div>
+
+      <div class="nav-hamburger" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================
+     MOBILE NAV
+============================ -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="closeMobileNav()">×</button>
+  <a href="#inicio" onclick="closeMobileNav()" data-i18n="nav.inicio">Inicio</a>
+  <a href="#problema" onclick="closeMobileNav()" data-i18n="nav.problema">Problema</a>
+  <a href="#como-funciona" onclick="closeMobileNav()" data-i18n="nav.como-funciona">Cómo funciona</a>
+  <a href="#beneficios" onclick="closeMobileNav()" data-i18n="nav.beneficios">Beneficios</a>
+  <a href="#planes" onclick="closeMobileNav()" data-i18n="nav.planes">Planes</a>
+  <a href="#nosotros" onclick="closeMobileNav()" data-i18n="nav.equipo">Nosotros</a>
+  <a href="agronomo.html" data-i18n="nav.agronomo">Agrónomo</a>
+  <a href="#" class="btn btn-primary" data-i18n="nav.cta">Descargar App</a>
+</div>
+
+<main>
+  <!-- ============================
+       HERO SECTION
+  ============================ -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="badge" data-i18n="agro.hero.badge">Para dueños de cultivos de palma</span>
+          <h1 class="hero-title" data-i18n="agro.hero.title">Tu palma en tu bolsillo.<br>Alertas que salvan cosechas.</h1>
+          <p class="hero-subtitle" data-i18n="agro.hero.subtitle">Recibe alertas cuando tu cultivo necesite atención. Sin internet, sin complicaciones.</p>
+
+          <div class="hero-ctas">
+            <a href="#" class="btn btn-amber btn-lg" data-i18n="agro.hero.cta.primary">Descargar App</a>
+            <a href="agronomo.html" class="btn btn-sm btn-outline-white" data-i18n="agro.hero.cta.agronomist">Dashboard Agrónomo →</a>
+          </div>
+
+          <div class="hero-trust">
+            <span class="trust-badge" data-i18n="agro.hero.trust.amazonia">✓ Diseñado para la Amazonía</span>
+            <span class="trust-badge" data-i18n="agro.hero.trust.alerts">✓ Alertas que salvan cosechas</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-images">
+            <img src="img/support/palm_plantation.png" alt="Cultivo de palma aceitera" class="hero-img">
+            <img src="img/support/professional.png" alt="Profesional supervisando cultivos" class="hero-img">
+            <div class="hero-phone-wrapper">
+              <img src="img/support/mobile_app_mocku_palm_agriculture.png" alt="App SmartPalm en móvil">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PROBLEM SECTION
+  ============================ -->
+  <section class="section section-alt" id="problema">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 data-i18n="agro.problem.title">Sabemos lo difícil que es cultivar palma en la Amazonía</h2>
+      </div>
+
+      <div class="problem-grid" role="list">
+        <article class="problem-card" role="listitem" data-animate>
+          <div class="problem-icon problem-icon-orange">⚠️</div>
+          <h3 data-i18n="agro.problem.card1.title">No sabes cuándo tu palma necesita agua</h3>
+          <p data-i18n="agro.problem.card1.desc">El estrés hídrico puede destruir tu cosecha si no lo detectas a tiempo.</p>
+        </article>
+
+        <article class="problem-card" role="listitem" data-animate>
+          <div class="problem-icon problem-icon-red">🐛</div>
+          <h3 data-i18n="agro.problem.card2.title">Las plagas llegan sin aviso</h3>
+          <p data-i18n="agro.problem.card2.desc">Sin monitoreo constante, una plaga puede afectar todo tu bloque en pocos días.</p>
+        </article>
+
+        <article class="problem-card" role="listitem" data-animate>
+          <div class="problem-icon problem-icon-amber">🔧</div>
+          <h3 data-i18n="agro.problem.card3.title">Configura tus propias alarmas</h3>
+          <p data-i18n="agro.problem.card3.desc">Personaliza los thresholds de riesgo según las necesidades de tu cultivo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       HOW IT WORKS SECTION
+  ============================ -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 data-i18n="agro.how.title">Así funciona SmartPalm</h2>
+      </div>
+
+      <div class="steps-grid" role="list">
+        <article class="step-card" role="listitem" data-animate>
+          <div class="step-number">1</div>
+          <div class="step-icon step-icon-green">📡</div>
+          <h3 data-i18n="agro.how.step1.title">Sensores en tu campo</h3>
+          <p data-i18n="agro.how.step1.desc">Pequeños dispositivos miden humedad y temperatura del suelo</p>
+        </article>
+
+        <article class="step-card" role="listitem" data-animate>
+          <div class="step-number">2</div>
+          <div class="step-icon step-icon-amber">📱</div>
+          <h3 data-i18n="agro.how.step2.title">Tu celular recibe los datos</h3>
+          <p data-i18n="agro.how.step2.desc">Aunque no tengas internet ni señal celular</p>
+        </article>
+
+        <article class="step-card" role="listitem" data-animate>
+          <div class="step-number">3</div>
+          <div class="step-icon step-icon-green">🔔</div>
+          <h3 data-i18n="agro.how.step3.title">Recibe alertas a tiempo</h3>
+          <p data-i18n="agro.how.step3.desc">Sabrás exactamente cuándo actuar para cuidar tu palma</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       VIDEO SECTION
+  ============================ -->
+  <section class="section section-alt" id="video">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 data-i18n="agro.video.title">Mira cómo SmartPalm ayuda a productores como tú</h2>
+      </div>
+
+      <div class="video-section" data-animate>
+        <div class="video-placeholder video-placeholder-lg" role="img" aria-label="Video demostrativo para agricultores">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7L8 5z"/></svg>
+          <p>🎥 <span data-i18n="agro.video.placeholder">Video: SmartPalm para Agricultores</span></p>
+          <small data-i18n="video.hint">Click para reproducir</small>
+        </div>
+      </div>
+
+      <div class="video-cta" data-animate>
+        <a href="#" class="btn btn-amber btn-lg" data-i18n="agro.video.cta">📱 Descargar App</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       BENEFITS SECTION
+  ============================ -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 data-i18n="agro.benefits.title">Todo lo que necesitas para cuidar tu palma</h2>
+        <!-- <p class="section-subtitle" data-i18n="agro.benefits.subtitle">Simple, sin internet, en tu idioma</p> -->
+      </div>
+
+      <div class="benefits-grid" role="list">
+        <article class="benefit-card" role="listitem" data-animate>
+          <div class="benefit-icon benefit-icon-teal">📱</div>
+          <h3 data-i18n="agro.benefits.card1.title">App móvil intuitiva</h3>
+          <p data-i18n="agro.benefits.card1.desc">Diseñada para cualquier agricultor. Monitorea tu palma desde tu celular sin complicaciones.</p>
+        </article>
+
+        <article class="benefit-card" role="listitem" data-animate>
+          <div class="benefit-icon benefit-icon-amber">🔔</div>
+          <h3 data-i18n="agro.benefits.card2.title">Alertas claras</h3>
+          <p data-i18n="agro.benefits.card2.desc">Sabrás exactamente qué hacer, no solo que hay un problema. Como "Riega el Bloque C ahora".</p>
+        </article>
+
+        <article class="benefit-card" role="listitem" data-animate>
+          <div class="benefit-icon benefit-icon-green">🌱</div>
+          <h3 data-i18n="agro.benefits.card3.title">Recomendaciones del INIA</h3>
+          <p data-i18n="agro.benefits.card3.desc">Consejos que cualquier persona puede entender, basados en investigación real.</p>
+        </article>
+
+        <article class="benefit-card" role="listitem" data-animate>
+          <div class="benefit-icon benefit-icon-teal">📊</div>
+          <h3 data-i18n="agro.benefits.card4.title">Reportes simples</h3>
+          <p data-i18n="agro.benefits.card4.desc">Genera reportes semanales de tu fundo. Descárgalos en PDF en segundos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PRICING SECTION
+  ============================ -->
+  <section class="section section-alt" id="planes">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 data-i18n="agro.pricing.title">Planes según el tamaño de tu fundo</h2>
+        <p class="section-subtitle" data-i18n="agro.pricing.subtitle">Todos incluyen 30 días de prueba gratis</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="pricing-card" data-animate>
+          <div class="plan-name">🌱 Semilla</div>
+          <div class="plan-price">S/. 149 <span data-i18n="pricing.permonth">/mes</span></div>
+          <div class="plan-tag" data-i18n="agro.pricing.plan1.tag">Hasta 10 hectáreas</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features" role="list">
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f1">App en tu celular</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f2">Hasta 5 sensores</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f3">Alertas de agua y plagas</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f4">Reportes básicos</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f5">Recomendaciones INIA</span></li>
+          </ul>
+          <a href="#" class="btn btn-secondary btn-block" data-i18n="pricing.cta.trial">Iniciar prueba gratis</a>
+        </article>
+
+        <article class="pricing-card pricing-card-featured" data-animate>
+          <div class="popular-badge" data-i18n="agro.pricing.plan2.badge">⭐ Más popular</div>
+          <div class="plan-name">🌾 Cosecha</div>
+          <div class="plan-price">S/. 349 <span data-i18n="pricing.permonth">/mes</span></div>
+          <div class="plan-tag" data-i18n="agro.pricing.plan2.tag">10 a 50 hectáreas</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features" role="list">
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f1">Todo lo de Semilla</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f2">Hasta 20 sensores</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f3">Alertas por SMS</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f4">Reportes semanales</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f5">Gestión por bloques</span></li>
+            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f6">Acceso para tu asesor</span></li>
+          </ul>
+          <div class="plan-note" data-i18n="agro.pricing.plan2.note">📱 Incluye acceso gratuito para 1 asesor técnico</div>
+          <a href="#" class="btn btn-primary btn-block" data-i18n="pricing.cta.trial">Iniciar prueba gratis</a>
+        </article>
+      </div>
+
+      <p class="pricing-contact" data-animate>
+        <span data-i18n="agro.pricing.contact">50+ hectáreas?</span> <a href="#" onclick="openSalesModal(); return false;" data-i18n="agro.pricing.contact.link">Contactar ventas →</a>
+      </p>
+
+      <div class="pricing-table-wrapper" data-animate>
+        <table class="pricing-table">
+          <thead>
+          <tr>
+            <th data-i18n="pricing.table.feature">Característica</th>
+            <th data-i18n="pricing.table.plan1">Semilla</th>
+            <th data-i18n="pricing.table.plan2">Cosecha</th>
+            <th data-i18n="pricing.table.plan3">Palma Pro</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td data-i18n="pricing.table.price">Precio</td>
+            <td>S/. 149</td>
+            <td>S/. 349</td>
+            <td data-i18n="pricing.table.custom">A medida</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.table.hectares">Hectáreas</td>
+            <td data-i18n="pricing.table.upto10">Hasta 10</td>
+            <td>10-50</td>
+            <td data-i18n="pricing.table.unlimited">50+</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.table.sensors">Sensores</td>
+            <td>5</td>
+            <td>20</td>
+            <td data-i18n="pricing.table.unlimited">Ilimitados</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.table.app">App móvil</td>
+            <td>✓</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.table.sms">Alertas SMS</td>
+            <td>-</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.table.advisor">Asesor técnico</td>
+            <td>-</td>
+            <td>-</td>
+            <td>✓</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CTA BANNER - PARA AGRÓNOMOS
+  ============================ -->
+  <section class="section agronomist-banner">
+    <div class="container">
+      <div class="agronomist-banner-inner">
+        <div class="agronomist-banner-content">
+          <span class="agronomist-banner-icon">🔬</span>
+          <div>
+            <h3>¿Trabajas con productores de palma?</h3>
+            <p>Accede al dashboard profesional para agrónomos con alertas priorizadas y reportes automáticos.</p>
+          </div>
+        </div>
+        <a href="agronomo.html" class="btn btn-outline-teal">Dashboard para agrónomos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       ABOUT THE TEAM SECTION
+  ============================ -->
+  <section class="section section-alt" id="nosotros">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 data-i18n="team.title">Conoce al equipo detrás de SmartPalm</h2>
+        <p class="section-subtitle" data-i18n="team.subtitle">Somos estudiantes de la UPC apasionados por resolver problemas reales del campo peruano</p>
+      </div>
+
+      <div class="video-section" data-animate>
+        <iframe
+                width="100%"
+                height="400"
+                src=""
+                title="About the Team - SmartPalm"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="team-grid" data-animate>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="img/victor.jpg" alt="Victor Rojas">
+          </div>
+          <h4 class="team-name">Victor Rojas</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="img/renso.png" alt="Integrante 2">
+          </div>
+          <h4 class="team-name">Integrante 2</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="img/jeremy.jpeg" alt="Jeremy Paucar">
+          </div>
+          <h4 class="team-name">Jeremy Paucar</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="" alt="Integrante 4">
+          </div>
+          <h4 class="team-name">Integrante 4</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="" alt="Integrante 5">
+          </div>
+          <h4 class="team-name">Integrante 5</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================
+     FOOTER
+============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">🌴 SmartPalm</div>
+        <p>Digitalizando el corazón de la Amazonía para un futuro sostenible y productivo.</p>
+        <div class="footer-cta">
+          <a href="#" class="btn btn-amber btn-lg" data-i18n="footer.cta.button.farmer">📱 Descargar App</a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h5 data-i18n="footer.nav.title">Enlaces</h5>
+        <nav>
+          <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+          <a href="#problema" data-i18n="nav.problema">Problema</a>
+          <a href="#como-funciona" data-i18n="nav.como-funciona">Cómo funciona</a>
+          <a href="#beneficios" data-i18n="nav.beneficios">Beneficios</a>
+          <a href="#planes" data-i18n="nav.planes">Planes</a>
+          <a href="#nosotros" data-i18n="nav.equipo">Nosotros</a>
+        </nav>
+      </div>
+
+      <div class="footer-social">
+        <h5 data-i18n="footer.follow">Síguenos</h5>
+        <nav>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">YouTube</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 TempWise S.A.C. · Lima, Perú</p>
+      <div class="footer-legal-links">
+<a href="privacidad.html" data-i18n="footer.privacy">Privacidad</a>
+        <a href="terminos.html" data-i18n="footer.terms">Términos y Condiciones</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================
+     MODAL - CONTACTAR VENTAS
+============================ -->
+<div class="modal-overlay" id="salesModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeSalesModal()" aria-label="Cerrar">×</button>
+    <div class="modal-header">
+      <h3 data-i18n="modal.contact.title">Hablar con ventas</h3>
+      <p data-i18n="modal.contact.subtitle">Cuéntanos sobre tu fundo y te ayudaremos a elegir el mejor plan</p>
+    </div>
+    <form class="contact-form" id="salesForm" onsubmit="handleSalesSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sales-nombre" data-i18n="modal.contact.field1">Nombre completo</label>
+          <input type="text" id="sales-nombre" name="nombre" required placeholder="Ej: Juan Pérez" data-i18n-placeholder="modal.contact.field1.placeholder">
+        </div>
+        <div class="form-group">
+          <label for="sales-whatsapp" data-i18n="modal.contact.field2">WhatsApp</label>
+          <input type="tel" id="sales-whatsapp" name="whatsapp" required placeholder="+51 999 123 456" pattern="\+51\s?\d{3}\s?\d{3}\s?\d{3}">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sales-ubicacion" data-i18n="modal.contact.field3">Ubicación del fundo</label>
+          <input type="text" id="sales-ubicacion" name="ubicacion" required placeholder="Ej: Ucayali, Aguaytía" data-i18n-placeholder="modal.contact.field3.placeholder">
+        </div>
+        <div class="form-group">
+          <label for="sales-hectareas" data-i18n="modal.contact.field4">Número de hectáreas</label>
+          <input type="number" id="sales-hectareas" name="hectareas" required min="1" placeholder="Ej: 25">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sales-primeravez" data-i18n="modal.contact.field5">¿Ya tienes sensores o es primera vez?</label>
+        <select id="sales-primeravez" name="primeravez">
+          <option value="primera_vez" data-i18n="modal.contact.field5.opt1">Primera vez con tecnología de monitoreo</option>
+          <option value="ya_tengo" data-i18n="modal.contact.field5.opt2">Ya tengo sensores pero quiero mejorar</option>
+          <option value="ns" data-i18n="modal.contact.field5.opt3">No estoy seguro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sales-mensaje" data-i18n="modal.contact.field6">Cuéntanos más sobre tu fundo (opcional)</label>
+        <textarea id="sales-mensaje" name="mensaje" rows="3" placeholder="Ej: Tengo 3 bloques de palma aceitera en Ucayali..." data-i18n-placeholder="modal.contact.field6.placeholder"></textarea>
+      </div>
+      <button type="submit" class="btn btn-amber btn-block btn-lg" data-i18n="modal.contact.submit">📱 Enviar por WhatsApp</button>
+      <p class="form-note" data-i18n="modal.contact.note">Te responderemos en menos de 24 horas</p>
+    </form>
+    <div class="modal-success" id="salesSuccess" style="display:none;">
+      <div class="success-icon">✅</div>
+      <h4 data-i18n="modal.contact.success.title">¡Mensaje enviado!</h4>
+      <p data-i18n="modal.contact.success.msg">Te contactaremos por WhatsApp en menos de 24 horas.</p>
+      <button class="btn btn-secondary" onclick="closeSalesModal()" data-i18n="modal.contact.success.close">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

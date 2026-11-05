@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPalm – Para Ingenieros Agrónomos</title>
+    <meta name="description" content="Gestiona todas tus plantaciones desde un solo lugar. Dashboard profesional con datos en tiempo real, alertas priorizadas y reportes automáticos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+============================ -->
+<header class="header" id="mainHeader">
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🌴</div>
+                SmartPalm
+            </a>
+
+            <span class="page-badge badge-green" data-i18n="nav.badge.agronomist">🔬 Para Agrónomos</span>
+
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="#problema" data-i18n="nav.problema">Problema</a></li>
+                <li><a href="#como-funciona" data-i18n="nav.como-funciona">Cómo funciona</a></li>
+                <li><a href="#beneficios" data-i18n="nav.beneficios">Beneficios</a></li>
+                <li><a href="#planes" data-i18n="nav.planes">Planes</a></li>
+                <li><a href="index.html" data-i18n="nav.agricultor">Agricultor</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="lang-toggle" id="langToggle" onclick="toggleLang()">
+                    <div class="lang-slider"></div>
+                    <span class="lang-opt active" data-lang="es">ES</span>
+                    <span class="lang-opt" data-lang="en">EN</span>
+                </div>
+                <a href="https://smart-palm.pages.dev/auth/login" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="nav.cta.dashboard">Acceder al Dashboard</a>
+            </div>
+
+            <div class="nav-hamburger" onclick="openMobileNav()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ============================
+     MOBILE NAV
+============================ -->
+<div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" onclick="closeMobileNav()">×</button>
+    <a href="#inicio" onclick="closeMobileNav()">Inicio</a>
+    <a href="#problema" onclick="closeMobileNav()">Problema</a>
+    <a href="#como-funciona" onclick="closeMobileNav()">Cómo funciona</a>
+    <a href="#beneficios" onclick="closeMobileNav()">Beneficios</a>
+    <a href="#planes" onclick="closeMobileNav()">Planes</a>
+    <a href="index.html">Agricultor</a>
+    <a href="https://smart-palm.pages.dev/auth/login" target="_blank" class="btn btn-primary">Acceder al Dashboard</a>
+</div>
+
+<main>
+    <!-- ============================
+         HERO SECTION (Navy/Teal)
+    ============================ -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="badge badge-green" data-i18n="agroano.hero.badge">🔬 Para ingenieros agrónomos</span>
+                    <h1 class="hero-title" data-i18n="agroano.hero.title">Supervisa todas tus plantaciones desde un solo lugar</h1>
+                    <p class="hero-subtitle" data-i18n="agroano.hero.subtitle">Dashboard profesional con estado de salud por zona (OPTIMAL/AT_RISK/CRITICAL), alertas priorizadas por severidad y reportes técnicos automáticos.</p>
+
+                    <div class="hero-ctas">
+                        <a href="https://smart-palm.pages.dev/auth/login" target="_blank" class="btn btn-amber btn-lg" data-i18n="agroano.hero.cta.primary">🔬 Acceder al Dashboard</a>
+                        <a href="index.html" class="btn btn-sm btn-outline-white">Aplicación Agricultor  →</a>
+                    </div>
+
+                    <!--             <div class="hero-health-states">
+                                  <div class="health-state health-optimal">
+                                    <span class="health-dot"></span>
+                                    <span data-i18n="agroano.hero.state.optimal">OPTIMAL</span>
+                                  </div>
+                                  <div class="health-state health-risk">
+                                    <span class="health-dot"></span>
+                                    <span data-i18n="agroano.hero.state.risk">AT_RISK</span>
+                                  </div>
+                                  <div class="health-state health-critical">
+                                    <span class="health-dot"></span>
+                                    <span data-i18n="agroano.hero.state.critical">CRITICAL</span>
+                                  </div>
+                                </div> -->
+                </div>
+
+                <div class="hero-visual">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dot"></div>
+                            <div class="mockup-dot"></div>
+                            <div class="mockup-dot"></div>
+                            <span class="mockup-title">SmartPalm Dashboard</span>
+                        </div>
+                        <div class="mockup-stats-row">
+                            <div class="mockup-stat">
+                                <div class="mockup-stat-label" data-i18n="dashboard.stat1">Plantaciones</div>
+                                <div class="mockup-stat-value">12</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="mockup-stat-label" data-i18n="dashboard.stat2">Sensores activos</div>
+                                <div class="mockup-stat-value ok">847</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="mockup-stat-label" data-i18n="dashboard.stat3">Alertas activas</div>
+                                <div class="mockup-stat-value warn">3</div>
+                            </div>
+                        </div>
+                        <div class="mockup-zones">
+                            <div class="mockup-zone zone-optimal">
+                                <span class="zone-name">Fundo A - Zona 1</span>
+                                <span class="zone-status" data-i18n="dashboard.zone.optimal">OPTIMAL</span>
+                            </div>
+                            <div class="mockup-zone zone-risk">
+                                <span class="zone-name">Fundo A - Zona 3</span>
+                                <span class="zone-status" data-i18n="dashboard.zone.risk">AT_RISK</span>
+                            </div>
+                            <div class="mockup-zone zone-critical">
+                                <span class="zone-name">Fundo B - Zona 2</span>
+                                <span class="zone-status" data-i18n="dashboard.zone.critical">CRITICAL</span>
+                            </div>
+                        </div>
+                        <div class="mockup-alerts">
+                            <div class="mockup-alert">
+                                <div class="alert-dot crit"></div>
+                                <span class="alert-text" data-i18n="dashboard.alert1">Estrés hídrico – Fundo Los Palomos</span>
+                            </div>
+                            <div class="mockup-alert">
+                                <div class="alert-dot warn"></div>
+                                <span class="alert-text" data-i18n="dashboard.alert2">pH bajo – Bloque 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         PROBLEM SECTION
+    ============================ -->
+    <section class="section section-alt" id="problema">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 data-i18n="agroano.problem.title">Sabemos los desafíos de supervisar cultivos en la Amazonía</h2>
+            </div>
+
+            <div class="problem-grid" role="list">
+                <article class="problem-card" role="listitem" data-animate>
+                    <div class="problem-icon problem-icon-green">📊</div>
+                    <h3 data-i18n="agroano.problem.card1.title">Tomas decisiones sin evidencia del campo</h3>
+                    <p data-i18n="agroano.problem.card1.desc">El 70% de las 95,000 hectáreas de palma en Perú son manejadas por pequeños productores con acceso limitado a herramientas tecnológicas.</p>
+                </article>
+
+                <article class="problem-card" role="listitem" data-animate>
+                    <div class="problem-icon problem-icon-amber">⏱️</div>
+                    <h3 data-i18n="agroano.problem.card2.title">Las visitas a campo son discontinuas y costosas</h3>
+                    <p data-i18n="agroano.problem.card2.desc">Ucayali tiene solo 40 técnicos para miles de hectáreas. No puedes estar en todas tus plantaciones al mismo tiempo.</p>
+                </article>
+
+                <article class="problem-card" role="listitem" data-animate>
+                    <div class="problem-icon problem-icon-green">📋</div>
+                    <h3 data-i18n="agroano.problem.card3.title">Reportes manuales sin trazabilidad</h3>
+                    <p data-i18n="agroano.problem.card3.desc">Generar reportes técnicos para cooperativas y certificadoras toma horas y los datos no están vinculados a las alertas ni intervenciones.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         HOW IT WORKS SECTION
+    ============================ -->
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 data-i18n="agroano.how.title">Cómo SmartPalm ayuda a tu trabajo</h2>
+            </div>
+
+            <div class="steps-grid" role="list">
+                <article class="step-card" role="listitem" data-animate>
+                    <div class="step-number">1</div>
+                    <div class="step-icon step-icon-green">📡</div>
+                    <h3 data-i18n="agroano.how.step1.title">Sensores 24/7 en cada fundo</h3>
+                    <p data-i18n="agroano.how.step1.desc">Dispositivos IoT miden humedad, temperatura, pH y conductividad eléctrica. Los datos se procesan y detectamos cuando un parámetro supera los umbrales INIA.</p>
+                </article>
+
+                <article class="step-card" role="listitem" data-animate>
+                    <div class="step-number">2</div>
+                    <div class="step-icon step-icon-green">📊</div>
+                    <h3 data-i18n="agroano.how.step2.title">Dashboard con estado de salud por zona</h3>
+                    <p data-i18n="agroano.how.step2.desc">Cada zona tiene estado OPTIMAL, AT_RISK o CRITICAL (regla peor-gana). Recibes alertas clasificadas por severidad: CRITICAL, WARNING o INFORMATIONAL.</p>
+                </article>
+
+                <article class="step-card" role="listitem" data-animate>
+                    <div class="step-number">3</div>
+                    <div class="step-icon step-icon-green">📋</div>
+                    <h3 data-i18n="agroano.how.step3.title">Aprueba recomendaciones y genera reportes</h3>
+                    <p data-i18n="agroano.how.step3.desc">El motor de IA genera recomendaciones que tú approves. Planifica visitas de campo (incluso offline), registra inspecciones y genera reportes PDF/CSV con trazabilidad completa.</p>
+                </article>
+            </div>
+
+            <div class="steps-cta" data-animate>
+                <a href="#planes" class="btn btn-secondary" data-i18n="agroano.how.cta">Prueba el dashboard gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         PRODUCT VIDEO SECTION
+    ============================ -->
+    <section class="section section-alt" id="video">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 data-i18n="agroano.video.title">Mira cómo SmartPalm facilita tu supervisión técnica</h2>
+            </div>
+
+            <div class="video-section" data-animate>
+                <div class="video-placeholder video-placeholder-lg" role="img" aria-label="Video demostrativo para agrónomos">
+                    <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7L8 5z"/></svg>
+                    <p>🎥 <span data-i18n="agroano.video.placeholder">Video: SmartPalm para Agrónomos</span></p>
+                    <small data-i18n="video.hint">Click para reproducir</small>
+                </div>
+            </div>
+
+            <div class="video-cta" data-animate>
+                <a href="https://smart-palm.pages.dev/auth/login" class="btn btn-primary btn-lg" data-i18n="agroano.video.cta">🔬 Acceder al Dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         BENEFITS SECTION
+    ============================ -->
+    <section class="section" id="beneficios">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 data-i18n="agroano.benefits.title">Herramientas profesionales para agrónomos</h2>
+                <p class="section-subtitle" data-i18n="agroano.benefits.subtitle">Todo lo que necesitas para supervisar mejor</p>
+            </div>
+
+            <div class="benefits-grid" role="list">
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">📊</div>
+                    <h3 data-i18n="agroano.benefits.card1.title">Dashboard multi-plantación</h3>
+                    <p data-i18n="agroano.benefits.card1.desc">Consolida todas tus plantaciones en una sola vista. Estado de salud por zona con lógica peor-gana y tendencia histórica de parámetros.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">📈</div>
+                    <h3 data-i18n="agroano.benefits.card2.title">Series de tiempo y comparación entre zonas</h3>
+                    <p data-i18n="agroano.benefits.card2.desc">Visualiza la evolución de humedad, temperatura y pH por zona. Compara hasta 3 zonas en paralelo para identificar patrones.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">🔔</div>
+                    <h3 data-i18n="agroano.benefits.card3.title">Alertas por nivel de severidad</h3>
+                    <p data-i18n="agroano.benefits.card3.desc">Clasificadas como CRITICAL, WARNING o INFORMATIONAL. Cada alerta se vincula a la zona y传感器 que la originó.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">🗺️</div>
+                    <h3 data-i18n="agroano.benefits.card4.title">Planificación de visitas de campo</h3>
+                    <p data-i18n="agroano.benefits.card4.desc">Agenda visitas, registra inspecciones desde el campo (incluso sin internet) y vincúlalas a alertas activas. Sincronización automática.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">🤖</div>
+                    <h3 data-i18n="agroano.benefits.card5.title">Recomendaciones IA calibradas INIA</h3>
+                    <p data-i18n="agroano.benefits.card5.desc">Motor de IA genera recomendaciones automáticas basadas en los parámetros INIA para palma aceitera amazónica. Tú revisas y approves.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-purple">🔗</div>
+                    <h3 data-i18n="agroano.benefits.card6.title">Trazabilidad completa</h3>
+                    <p data-i18n="agroano.benefits.card6.desc">Recomendación → Inspección → Intervención. Cada decisión queda vinculada y genera un reporte trazable para cooperativas y certificadoras.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">📄</div>
+                    <h3 data-i18n="agroano.benefits.card7.title">Reportes automáticos en PDF y CSV</h3>
+                    <p data-i18n="agroano.benefits.card7.desc">Genera reportes técnicos listos para exportar. Incluyen estado de salud, alertas del período, intervenciones ejecutadas y recomendaciones pendientes.</p>
+                </article>
+
+                <article class="benefit-card" role="listitem" data-animate>
+                    <div class="benefit-icon benefit-icon-green">📱</div>
+                    <h3 data-i18n="agroano.benefits.card8.title">Acceso desde cualquier dispositivo</h3>
+                    <p data-i18n="agroano.benefits.card8.desc">Plataforma web responsive. Accede desde tu computadora de escritorio en la oficina o desde tu tablet en el campo.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+         PRICING SECTION
+    ============================ -->
+    <section class="section section-alt" id="planes">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 data-i18n="agroano.pricing.title">Planes según el tamaño de tu operación</h2>
+                <p class="section-subtitle" data-i18n="agroano.pricing.subtitle">Todos incluyen 30 días de prueba gratis</p>
+            </div>
+
+            <div class="pricing-grid pricing-grid-center">
+                <!-- Plan Cosecha (Destacado) -->
+                <article class="pricing-card pricing-card-featured" data-animate>
+                    <div class="popular-badge" data-i18n="agroano.pricing.plan1.badge">⭐ Recomendado</div>
+                    <div class="plan-name">🌾 Cosecha</div>
+                    <div class="plan-price">S/. 349 <span data-i18n="pricing.permonth">/mes</span></div>
+                    <div class="plan-tag" data-i18n="agroano.pricing.plan1.tag">Para fundos de 10 a 50 hectáreas</div>
+                    <div class="plan-divider"></div>
+                    <ul class="plan-features" role="list">
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f1">Dashboard completo</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f2">Hasta 20 sensores</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f3">Reportes semanales</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f4">Multi-bloque</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f5">Acceso multi-cliente</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f6">Alertas por SMS</span></li>
+                    </ul>
+                    <a href="https://smart-palm.pages.dev/auth/login" target="_blank" class="btn btn-primary btn-block" data-i18n="pricing.cta.trial">Iniciar prueba gratis</a>
+                </article>
+
+                <!-- Plan Palma Pro -->
+                <article class="pricing-card" data-animate>
+                    <div class="plan-name">🏆 Palma Pro</div>
+                    <div class="plan-price" data-i18n="agroano.pricing.plan2.price">A medida <span data-i18n="pricing.permonth">/mes</span></div>
+                    <div class="plan-tag" data-i18n="agroano.pricing.plan2.tag">Cooperativas y grandes fundos</div>
+                    <div class="plan-divider"></div>
+                    <ul class="plan-features" role="list">
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f1">Sensores ilimitados</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f2">Todo lo de Cosecha</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f3">Asesor agrónomo dedicado</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f4">Reportes personalizados</span></li>
+                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f5">Capacitación para tu equipo</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-block" data-i18n="pricing.cta.contact">Contactar ventas</a>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ============================
+       FOOTER (Navy)
+     ============================ -->
+<footer class="footer">
+    <div class="container">
+        <!-- Grid: Brand + Nav + Social -->
+        <div class="footer-grid">
+            <!-- Brand + CTA -->
+            <div class="footer-brand">
+                <div class="footer-logo">🌴 SmartPalm</div>
+                <p data-i18n="footer.brand.desc">Tecnología satelital e inteligencia artificial aplicada a la supervisión técnica de cultivos tropicales.</p>
+                <div class="footer-cta">
+                    <a href="#" class="btn btn-primary btn-lg" data-i18n="footer.cta.button">🔬 Acceder al Dashboard</a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="footer-nav">
+                <h5 data-i18n="footer.nav.title">Navegación</h5>
+                <nav>
+                    <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+                    <a href="#problema" data-i18n="nav.problema">Problema</a>
+                    <a href="#como-funciona" data-i18n="nav.como-funciona">Cómo funciona</a>
+                    <a href="#beneficios" data-i18n="nav.beneficios">Beneficios</a>
+                    <a href="#planes" data-i18n="nav.planes">Planes</a>
+                </nav>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-social">
+                <h5 data-i18n="footer.follow">Síguenos</h5>
+                <nav>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 TempWise S.A.C. · Lima, Perú</p>
+            <div class="footer-legal-links">
+<a href="privacidad.html" data-i18n="footer.privacy">Privacidad</a>
+                <a href="terminos.html" data-i18n="footer.terms">Términos y Condiciones</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
