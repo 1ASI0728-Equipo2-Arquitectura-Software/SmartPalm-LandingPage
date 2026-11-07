@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Lucide icons (ISC). Inline sprite: no CDN, no extra request. -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></symbol>
+    <symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2" /><line x1="12" x2="15" y1="14" y2="11" /><circle cx="12" cy="14" r="8" /></symbol>
+    <symbol id="i-clipboard-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></symbol>
+    <symbol id="i-satellite-dish" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 12a6 6 0 00-6-6" /><path d="M2.824 10.459a8 8 0 0010.717 10.717c.558-.276.623-1.012.183-1.452l-9.448-9.448c-.44-.44-1.176-.375-1.452.183" /><path d="M22 12A10 10 0 0012 2" /><path d="m9 15 4-4" /></symbol>
+    <symbol id="i-chart-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" /><path d="M15 5.764v15" /><path d="M9 3.236v15" /></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /><rect width="16" height="12" x="4" y="8" rx="2" /><path d="M2 14h2" /><path d="M20 14h2" /><path d="M15 13v2" /><path d="M9 13v2" /></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></symbol>
+    <symbol id="i-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></symbol>
+    <symbol id="i-microscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8" /><path d="M3 22h18" /><path d="M14 22a7 7 0 1 0 0-14h-1" /><path d="M9 14h2" /><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" /><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" /></symbol>
+    <symbol id="i-layout-dashboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></symbol>
+    <symbol id="i-wheat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 16 8" /><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol>
+  </svg>
 
 <!-- ============================
      HEADER
@@ -22,7 +41,7 @@
                 SmartPalm
             </a>
 
-            <span class="page-badge badge-green" data-i18n="nav.badge.agronomist">🔬 Para Agrónomos</span>
+            <span class="page-badge badge-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-microscope"></use></svg><span data-i18n="nav.badge.agronomist">Para Agrónomos</span></span>
 
             <ul class="nav-links">
                 <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
@@ -71,12 +90,12 @@
         <div class="container">
             <div class="hero-inner">
                 <div class="hero-content">
-                    <span class="badge badge-green" data-i18n="agroano.hero.badge">🔬 Para ingenieros agrónomos</span>
+                    <span class="badge badge-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-microscope"></use></svg><span data-i18n="agroano.hero.badge">Para ingenieros agrónomos</span></span>
                     <h1 class="hero-title" data-i18n="agroano.hero.title">Supervisa todas tus plantaciones desde un solo lugar</h1>
                     <p class="hero-subtitle" data-i18n="agroano.hero.subtitle">Dashboard profesional con estado de salud por zona (OPTIMAL/AT_RISK/CRITICAL), alertas priorizadas por severidad y reportes técnicos automáticos.</p>
 
                     <div class="hero-ctas">
-                        <a href="https://smart-palm.pages.dev/auth/login" target="_blank" class="btn btn-amber btn-lg" data-i18n="agroano.hero.cta.primary">🔬 Acceder al Dashboard</a>
+                        <a href="https://smart-palm.pages.dev/auth/login" target="_blank" class="btn btn-amber btn-lg"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layout-dashboard"></use></svg><span data-i18n="agroano.hero.cta.primary">Acceder al Dashboard</span></a>
                         <a href="index.html" class="btn btn-sm btn-outline-white">Aplicación Agricultor  →</a>
                     </div>
 
@@ -159,19 +178,19 @@
 
             <div class="problem-grid" role="list">
                 <article class="problem-card" role="listitem" data-animate>
-                    <div class="problem-icon problem-icon-green">📊</div>
+                    <div class="problem-icon problem-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart-column"></use></svg></div>
                     <h3 data-i18n="agroano.problem.card1.title">Tomas decisiones sin evidencia del campo</h3>
                     <p data-i18n="agroano.problem.card1.desc">El 70% de las 95,000 hectáreas de palma en Perú son manejadas por pequeños productores con acceso limitado a herramientas tecnológicas.</p>
                 </article>
 
                 <article class="problem-card" role="listitem" data-animate>
-                    <div class="problem-icon problem-icon-amber">⏱️</div>
+                    <div class="problem-icon problem-icon-amber"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-timer"></use></svg></div>
                     <h3 data-i18n="agroano.problem.card2.title">Las visitas a campo son discontinuas y costosas</h3>
                     <p data-i18n="agroano.problem.card2.desc">Ucayali tiene solo 40 técnicos para miles de hectáreas. No puedes estar en todas tus plantaciones al mismo tiempo.</p>
                 </article>
 
                 <article class="problem-card" role="listitem" data-animate>
-                    <div class="problem-icon problem-icon-green">📋</div>
+                    <div class="problem-icon problem-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clipboard-list"></use></svg></div>
                     <h3 data-i18n="agroano.problem.card3.title">Reportes manuales sin trazabilidad</h3>
                     <p data-i18n="agroano.problem.card3.desc">Generar reportes técnicos para cooperativas y certificadoras toma horas y los datos no están vinculados a las alertas ni intervenciones.</p>
                 </article>
@@ -191,21 +210,21 @@
             <div class="steps-grid" role="list">
                 <article class="step-card" role="listitem" data-animate>
                     <div class="step-number">1</div>
-                    <div class="step-icon step-icon-green">📡</div>
+                    <div class="step-icon step-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-satellite-dish"></use></svg></div>
                     <h3 data-i18n="agroano.how.step1.title">Sensores 24/7 en cada fundo</h3>
                     <p data-i18n="agroano.how.step1.desc">Dispositivos IoT miden humedad, temperatura, pH y conductividad eléctrica. Los datos se procesan y detectamos cuando un parámetro supera los umbrales INIA.</p>
                 </article>
 
                 <article class="step-card" role="listitem" data-animate>
                     <div class="step-number">2</div>
-                    <div class="step-icon step-icon-green">📊</div>
+                    <div class="step-icon step-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart-column"></use></svg></div>
                     <h3 data-i18n="agroano.how.step2.title">Dashboard con estado de salud por zona</h3>
                     <p data-i18n="agroano.how.step2.desc">Cada zona tiene estado OPTIMAL, AT_RISK o CRITICAL (regla peor-gana). Recibes alertas clasificadas por severidad: CRITICAL, WARNING o INFORMATIONAL.</p>
                 </article>
 
                 <article class="step-card" role="listitem" data-animate>
                     <div class="step-number">3</div>
-                    <div class="step-icon step-icon-green">📋</div>
+                    <div class="step-icon step-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clipboard-list"></use></svg></div>
                     <h3 data-i18n="agroano.how.step3.title">Aprueba recomendaciones y genera reportes</h3>
                     <p data-i18n="agroano.how.step3.desc">El motor de IA genera recomendaciones que tú approves. Planifica visitas de campo (incluso offline), registra inspecciones y genera reportes PDF/CSV con trazabilidad completa.</p>
                 </article>
@@ -235,7 +254,7 @@
             </div>
 
             <div class="video-cta" data-animate>
-                <a href="https://smart-palm.pages.dev/auth/login" class="btn btn-primary btn-lg" data-i18n="agroano.video.cta">🔬 Acceder al Dashboard</a>
+                <a href="https://smart-palm.pages.dev/auth/login" class="btn btn-primary btn-lg"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layout-dashboard"></use></svg><span data-i18n="agroano.video.cta">Acceder al Dashboard</span></a>
             </div>
         </div>
     </section>
@@ -252,49 +271,49 @@
 
             <div class="benefits-grid" role="list">
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">📊</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart-column"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card1.title">Dashboard multi-plantación</h3>
                     <p data-i18n="agroano.benefits.card1.desc">Consolida todas tus plantaciones en una sola vista. Estado de salud por zona con lógica peor-gana y tendencia histórica de parámetros.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">📈</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart-line"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card2.title">Series de tiempo y comparación entre zonas</h3>
                     <p data-i18n="agroano.benefits.card2.desc">Visualiza la evolución de humedad, temperatura y pH por zona. Compara hasta 3 zonas en paralelo para identificar patrones.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">🔔</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card3.title">Alertas por nivel de severidad</h3>
                     <p data-i18n="agroano.benefits.card3.desc">Clasificadas como CRITICAL, WARNING o INFORMATIONAL. Cada alerta se vincula a la zona y传感器 que la originó.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">🗺️</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-map"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card4.title">Planificación de visitas de campo</h3>
                     <p data-i18n="agroano.benefits.card4.desc">Agenda visitas, registra inspecciones desde el campo (incluso sin internet) y vincúlalas a alertas activas. Sincronización automática.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">🤖</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bot"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card5.title">Recomendaciones IA calibradas INIA</h3>
                     <p data-i18n="agroano.benefits.card5.desc">Motor de IA genera recomendaciones automáticas basadas en los parámetros INIA para palma aceitera amazónica. Tú revisas y approves.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-purple">🔗</div>
+                    <div class="benefit-icon benefit-icon-purple"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-link"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card6.title">Trazabilidad completa</h3>
                     <p data-i18n="agroano.benefits.card6.desc">Recomendación → Inspección → Intervención. Cada decisión queda vinculada y genera un reporte trazable para cooperativas y certificadoras.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">📄</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file-text"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card7.title">Reportes automáticos en PDF y CSV</h3>
                     <p data-i18n="agroano.benefits.card7.desc">Genera reportes técnicos listos para exportar. Incluyen estado de salud, alertas del período, intervenciones ejecutadas y recomendaciones pendientes.</p>
                 </article>
 
                 <article class="benefit-card" role="listitem" data-animate>
-                    <div class="benefit-icon benefit-icon-green">📱</div>
+                    <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smartphone"></use></svg></div>
                     <h3 data-i18n="agroano.benefits.card8.title">Acceso desde cualquier dispositivo</h3>
                     <p data-i18n="agroano.benefits.card8.desc">Plataforma web responsive. Accede desde tu computadora de escritorio en la oficina o desde tu tablet en el campo.</p>
                 </article>
@@ -315,18 +334,18 @@
             <div class="pricing-grid pricing-grid-center">
                 <!-- Plan Cosecha (Destacado) -->
                 <article class="pricing-card pricing-card-featured" data-animate>
-                    <div class="popular-badge" data-i18n="agroano.pricing.plan1.badge">⭐ Recomendado</div>
-                    <div class="plan-name">🌾 Cosecha</div>
+                    <div class="popular-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg><span data-i18n="agroano.pricing.plan1.badge">Recomendado</span></div>
+                    <div class="plan-name"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wheat"></use></svg> Cosecha</div>
                     <div class="plan-price">S/. 349 <span data-i18n="pricing.permonth">/mes</span></div>
                     <div class="plan-tag" data-i18n="agroano.pricing.plan1.tag">Para fundos de 10 a 50 hectáreas</div>
                     <div class="plan-divider"></div>
                     <ul class="plan-features" role="list">
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f1">Dashboard completo</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f2">Hasta 20 sensores</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f3">Reportes semanales</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f4">Multi-bloque</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f5">Acceso multi-cliente</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan1.f6">Alertas por SMS</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan1.f1">Dashboard completo</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan1.f2">Hasta 20 sensores</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan1.f3">Reportes semanales</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan1.f4">Multi-bloque</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan1.f5">Acceso multi-cliente</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan1.f6">Alertas por SMS</span></li>
                     </ul>
                     <a href="https://smart-palm.pages.dev/auth/login" target="_blank" class="btn btn-primary btn-block" data-i18n="pricing.cta.trial">Iniciar prueba gratis</a>
                 </article>
@@ -338,11 +357,11 @@
                     <div class="plan-tag" data-i18n="agroano.pricing.plan2.tag">Cooperativas y grandes fundos</div>
                     <div class="plan-divider"></div>
                     <ul class="plan-features" role="list">
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f1">Sensores ilimitados</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f2">Todo lo de Cosecha</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f3">Asesor agrónomo dedicado</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f4">Reportes personalizados</span></li>
-                        <li><span class="check">✓</span> <span data-i18n="agroano.pricing.plan2.f5">Capacitación para tu equipo</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan2.f1">Sensores ilimitados</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan2.f2">Todo lo de Cosecha</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan2.f3">Asesor agrónomo dedicado</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan2.f4">Reportes personalizados</span></li>
+                        <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agroano.pricing.plan2.f5">Capacitación para tu equipo</span></li>
                     </ul>
                     <a href="#" class="btn btn-secondary btn-block" data-i18n="pricing.cta.contact">Contactar ventas</a>
                 </article>
@@ -363,7 +382,7 @@
                 <div class="footer-logo">🌴 SmartPalm</div>
                 <p data-i18n="footer.brand.desc">Tecnología satelital e inteligencia artificial aplicada a la supervisión técnica de cultivos tropicales.</p>
                 <div class="footer-cta">
-                    <a href="#" class="btn btn-primary btn-lg" data-i18n="footer.cta.button">🔬 Acceder al Dashboard</a>
+                    <a href="#" class="btn btn-primary btn-lg"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layout-dashboard"></use></svg><span data-i18n="footer.cta.button">Acceder al Dashboard</span></a>
                 </div>
             </div>
 

@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Lucide icons (ISC). Inline sprite: no CDN, no extra request. -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-triangle-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /><path d="M12 9v4" /><path d="M12 17h.01" /></symbol>
+    <symbol id="i-bug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-9" /><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z" /><path d="M14.12 3.88 16 2" /><path d="M21 21a4 4 0 0 0-3.81-4" /><path d="M21 5a4 4 0 0 1-3.55 3.97" /><path d="M22 13h-4" /><path d="M3 21a4 4 0 0 1 3.81-4" /><path d="M3 5a4 4 0 0 0 3.55 3.97" /><path d="M6 13H2" /><path d="m8 2 1.88 1.88" /><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13" /></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" /></symbol>
+    <symbol id="i-satellite-dish" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 12a6 6 0 00-6-6" /><path d="M2.824 10.459a8 8 0 0010.717 10.717c.558-.276.623-1.012.183-1.452l-9.448-9.448c-.44-.44-1.176-.375-1.452.183" /><path d="M22 12A10 10 0 0012 2" /><path d="m9 15 4-4" /></symbol>
+    <symbol id="i-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0" /><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" /><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" /><path d="M5 21h14" /></symbol>
+    <symbol id="i-chart-column" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></symbol>
+    <symbol id="i-microscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8" /><path d="M3 22h18" /><path d="M14 22a7 7 0 1 0 0-14h-1" /><path d="M9 14h2" /><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" /><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" /></symbol>
+    <symbol id="i-circle-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></symbol>
+    <symbol id="i-tree-palm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4" /><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3" /><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35" /><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14" /></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></symbol>
+    <symbol id="i-wheat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 16 8" /><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol>
+  </svg>
 
 <!-- ============================
      HEADER
@@ -22,7 +40,7 @@
         SmartPalm
       </a>
 
-      <span class="page-badge badge-green" data-i18n="nav.badge.farmer">🌴 Para Agricultores</span>
+      <span class="page-badge badge-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-tree-palm"></use></svg><span data-i18n="nav.badge.farmer">Para Agricultores</span></span>
 
       <ul class="nav-links">
         <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
@@ -83,8 +101,8 @@
           </div>
 
           <div class="hero-trust">
-            <span class="trust-badge" data-i18n="agro.hero.trust.amazonia">✓ Diseñado para la Amazonía</span>
-            <span class="trust-badge" data-i18n="agro.hero.trust.alerts">✓ Alertas que salvan cosechas</span>
+            <span class="trust-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span data-i18n="agro.hero.trust.amazonia">Diseñado para la Amazonía</span></span>
+            <span class="trust-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span data-i18n="agro.hero.trust.alerts">Alertas que salvan cosechas</span></span>
           </div>
         </div>
 
@@ -112,19 +130,19 @@
 
       <div class="problem-grid" role="list">
         <article class="problem-card" role="listitem" data-animate>
-          <div class="problem-icon problem-icon-orange">⚠️</div>
+          <div class="problem-icon problem-icon-orange"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-triangle-alert"></use></svg></div>
           <h3 data-i18n="agro.problem.card1.title">No sabes cuándo tu palma necesita agua</h3>
           <p data-i18n="agro.problem.card1.desc">El estrés hídrico puede destruir tu cosecha si no lo detectas a tiempo.</p>
         </article>
 
         <article class="problem-card" role="listitem" data-animate>
-          <div class="problem-icon problem-icon-red">🐛</div>
+          <div class="problem-icon problem-icon-red"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bug"></use></svg></div>
           <h3 data-i18n="agro.problem.card2.title">Las plagas llegan sin aviso</h3>
           <p data-i18n="agro.problem.card2.desc">Sin monitoreo constante, una plaga puede afectar todo tu bloque en pocos días.</p>
         </article>
 
         <article class="problem-card" role="listitem" data-animate>
-          <div class="problem-icon problem-icon-amber">🔧</div>
+          <div class="problem-icon problem-icon-amber"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wrench"></use></svg></div>
           <h3 data-i18n="agro.problem.card3.title">Configura tus propias alarmas</h3>
           <p data-i18n="agro.problem.card3.desc">Personaliza los thresholds de riesgo según las necesidades de tu cultivo.</p>
         </article>
@@ -144,21 +162,21 @@
       <div class="steps-grid" role="list">
         <article class="step-card" role="listitem" data-animate>
           <div class="step-number">1</div>
-          <div class="step-icon step-icon-green">📡</div>
+          <div class="step-icon step-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-satellite-dish"></use></svg></div>
           <h3 data-i18n="agro.how.step1.title">Sensores en tu campo</h3>
           <p data-i18n="agro.how.step1.desc">Pequeños dispositivos miden humedad y temperatura del suelo</p>
         </article>
 
         <article class="step-card" role="listitem" data-animate>
           <div class="step-number">2</div>
-          <div class="step-icon step-icon-amber">📱</div>
+          <div class="step-icon step-icon-amber"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smartphone"></use></svg></div>
           <h3 data-i18n="agro.how.step2.title">Tu celular recibe los datos</h3>
           <p data-i18n="agro.how.step2.desc">Aunque no tengas internet ni señal celular</p>
         </article>
 
         <article class="step-card" role="listitem" data-animate>
           <div class="step-number">3</div>
-          <div class="step-icon step-icon-green">🔔</div>
+          <div class="step-icon step-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"></use></svg></div>
           <h3 data-i18n="agro.how.step3.title">Recibe alertas a tiempo</h3>
           <p data-i18n="agro.how.step3.desc">Sabrás exactamente cuándo actuar para cuidar tu palma</p>
         </article>
@@ -184,7 +202,7 @@
       </div>
 
       <div class="video-cta" data-animate>
-        <a href="#" class="btn btn-amber btn-lg" data-i18n="agro.video.cta">📱 Descargar App</a>
+        <a href="#" class="btn btn-amber btn-lg"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smartphone"></use></svg><span data-i18n="agro.video.cta">Descargar App</span></a>
       </div>
     </div>
   </section>
@@ -201,25 +219,25 @@
 
       <div class="benefits-grid" role="list">
         <article class="benefit-card" role="listitem" data-animate>
-          <div class="benefit-icon benefit-icon-teal">📱</div>
+          <div class="benefit-icon benefit-icon-teal"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smartphone"></use></svg></div>
           <h3 data-i18n="agro.benefits.card1.title">App móvil intuitiva</h3>
           <p data-i18n="agro.benefits.card1.desc">Diseñada para cualquier agricultor. Monitorea tu palma desde tu celular sin complicaciones.</p>
         </article>
 
         <article class="benefit-card" role="listitem" data-animate>
-          <div class="benefit-icon benefit-icon-amber">🔔</div>
+          <div class="benefit-icon benefit-icon-amber"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bell"></use></svg></div>
           <h3 data-i18n="agro.benefits.card2.title">Alertas claras</h3>
           <p data-i18n="agro.benefits.card2.desc">Sabrás exactamente qué hacer, no solo que hay un problema. Como "Riega el Bloque C ahora".</p>
         </article>
 
         <article class="benefit-card" role="listitem" data-animate>
-          <div class="benefit-icon benefit-icon-green">🌱</div>
+          <div class="benefit-icon benefit-icon-green"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sprout"></use></svg></div>
           <h3 data-i18n="agro.benefits.card3.title">Recomendaciones del INIA</h3>
           <p data-i18n="agro.benefits.card3.desc">Consejos que cualquier persona puede entender, basados en investigación real.</p>
         </article>
 
         <article class="benefit-card" role="listitem" data-animate>
-          <div class="benefit-icon benefit-icon-teal">📊</div>
+          <div class="benefit-icon benefit-icon-teal"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chart-column"></use></svg></div>
           <h3 data-i18n="agro.benefits.card4.title">Reportes simples</h3>
           <p data-i18n="agro.benefits.card4.desc">Genera reportes semanales de tu fundo. Descárgalos en PDF en segundos.</p>
         </article>
@@ -239,35 +257,35 @@
 
       <div class="pricing-grid">
         <article class="pricing-card" data-animate>
-          <div class="plan-name">🌱 Semilla</div>
+          <div class="plan-name"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sprout"></use></svg> Semilla</div>
           <div class="plan-price">S/. 149 <span data-i18n="pricing.permonth">/mes</span></div>
           <div class="plan-tag" data-i18n="agro.pricing.plan1.tag">Hasta 10 hectáreas</div>
           <div class="plan-divider"></div>
           <ul class="plan-features" role="list">
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f1">App en tu celular</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f2">Hasta 5 sensores</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f3">Alertas de agua y plagas</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f4">Reportes básicos</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan1.f5">Recomendaciones INIA</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan1.f1">App en tu celular</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan1.f2">Hasta 5 sensores</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan1.f3">Alertas de agua y plagas</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan1.f4">Reportes básicos</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan1.f5">Recomendaciones INIA</span></li>
           </ul>
           <a href="#" class="btn btn-secondary btn-block" data-i18n="pricing.cta.trial">Iniciar prueba gratis</a>
         </article>
 
         <article class="pricing-card pricing-card-featured" data-animate>
-          <div class="popular-badge" data-i18n="agro.pricing.plan2.badge">⭐ Más popular</div>
-          <div class="plan-name">🌾 Cosecha</div>
+          <div class="popular-badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg><span data-i18n="agro.pricing.plan2.badge">Más popular</span></div>
+          <div class="plan-name"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-wheat"></use></svg> Cosecha</div>
           <div class="plan-price">S/. 349 <span data-i18n="pricing.permonth">/mes</span></div>
           <div class="plan-tag" data-i18n="agro.pricing.plan2.tag">10 a 50 hectáreas</div>
           <div class="plan-divider"></div>
           <ul class="plan-features" role="list">
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f1">Todo lo de Semilla</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f2">Hasta 20 sensores</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f3">Alertas por SMS</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f4">Reportes semanales</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f5">Gestión por bloques</span></li>
-            <li><span class="check">✓</span> <span data-i18n="agro.pricing.plan2.f6">Acceso para tu asesor</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan2.f1">Todo lo de Semilla</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan2.f2">Hasta 20 sensores</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan2.f3">Alertas por SMS</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan2.f4">Reportes semanales</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan2.f5">Gestión por bloques</span></li>
+            <li><span class="check"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span> <span data-i18n="agro.pricing.plan2.f6">Acceso para tu asesor</span></li>
           </ul>
-          <div class="plan-note" data-i18n="agro.pricing.plan2.note">📱 Incluye acceso gratuito para 1 asesor técnico</div>
+          <div class="plan-note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smartphone"></use></svg><span data-i18n="agro.pricing.plan2.note">Incluye acceso gratuito para 1 asesor técnico</span></div>
           <a href="#" class="btn btn-primary btn-block" data-i18n="pricing.cta.trial">Iniciar prueba gratis</a>
         </article>
       </div>
@@ -307,21 +325,21 @@
           </tr>
           <tr>
             <td data-i18n="pricing.table.app">App móvil</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <td><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></td>
+            <td><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></td>
+            <td><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></td>
           </tr>
           <tr>
             <td data-i18n="pricing.table.sms">Alertas SMS</td>
             <td>-</td>
-            <td>✓</td>
-            <td>✓</td>
+            <td><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></td>
+            <td><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></td>
           </tr>
           <tr>
             <td data-i18n="pricing.table.advisor">Asesor técnico</td>
             <td>-</td>
             <td>-</td>
-            <td>✓</td>
+            <td><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></td>
           </tr>
           </tbody>
         </table>
@@ -336,7 +354,7 @@
     <div class="container">
       <div class="agronomist-banner-inner">
         <div class="agronomist-banner-content">
-          <span class="agronomist-banner-icon">🔬</span>
+          <span class="agronomist-banner-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-microscope"></use></svg></span>
           <div>
             <h3>¿Trabajas con productores de palma?</h3>
             <p>Accede al dashboard profesional para agrónomos con alertas priorizadas y reportes automáticos.</p>
@@ -372,37 +390,37 @@
       <div class="team-grid" data-animate>
         <div class="team-card">
           <div class="team-photo">
-            <img src="img/victor.jpg" alt="Victor Rojas">
-          </div>
-          <h4 class="team-name">Victor Rojas</h4>
-          <p class="team-role">Ingeniero de Software - UPC</p>
-        </div>
-        <div class="team-card">
-          <div class="team-photo">
-            <img src="img/renso.png" alt="Integrante 2">
-          </div>
-          <h4 class="team-name">Integrante 2</h4>
-          <p class="team-role">Ingeniero de Software - UPC</p>
-        </div>
-        <div class="team-card">
-          <div class="team-photo">
-            <img src="img/jeremy.jpeg" alt="Jeremy Paucar">
+            <img src="img/jeremy-paucar.jpg" alt="Jeremy Paucar">
           </div>
           <h4 class="team-name">Jeremy Paucar</h4>
           <p class="team-role">Ingeniero de Software - UPC</p>
         </div>
         <div class="team-card">
           <div class="team-photo">
-            <img src="" alt="Integrante 4">
+            <img src="img/victor-rojas.jpg" alt="Victor Rojas">
           </div>
-          <h4 class="team-name">Integrante 4</h4>
+          <h4 class="team-name">Victor Rojas</h4>
           <p class="team-role">Ingeniero de Software - UPC</p>
         </div>
         <div class="team-card">
           <div class="team-photo">
-            <img src="" alt="Integrante 5">
+            <img src="img/camila-conde.jpg" alt="Camila Conde">
           </div>
-          <h4 class="team-name">Integrante 5</h4>
+          <h4 class="team-name">Camila Conde</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="img/mauricio-munoz.png" alt="Mauricio Muñoz">
+          </div>
+          <h4 class="team-name">Mauricio Muñoz</h4>
+          <p class="team-role">Ingeniero de Software - UPC</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="img/kenyi-ramirez.png" alt="Kenyi Ramírez">
+          </div>
+          <h4 class="team-name">Kenyi Ramírez</h4>
           <p class="team-role">Ingeniero de Software - UPC</p>
         </div>
       </div>
@@ -420,7 +438,7 @@
         <div class="footer-logo">🌴 SmartPalm</div>
         <p>Digitalizando el corazón de la Amazonía para un futuro sostenible y productivo.</p>
         <div class="footer-cta">
-          <a href="#" class="btn btn-amber btn-lg" data-i18n="footer.cta.button.farmer">📱 Descargar App</a>
+          <a href="#" class="btn btn-amber btn-lg"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-smartphone"></use></svg><span data-i18n="footer.cta.button.farmer">Descargar App</span></a>
         </div>
       </div>
 
@@ -499,11 +517,11 @@
         <label for="sales-mensaje" data-i18n="modal.contact.field6">Cuéntanos más sobre tu fundo (opcional)</label>
         <textarea id="sales-mensaje" name="mensaje" rows="3" placeholder="Ej: Tengo 3 bloques de palma aceitera en Ucayali..." data-i18n-placeholder="modal.contact.field6.placeholder"></textarea>
       </div>
-      <button type="submit" class="btn btn-amber btn-block btn-lg" data-i18n="modal.contact.submit">📱 Enviar por WhatsApp</button>
+      <button type="submit" class="btn btn-amber btn-block btn-lg"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-send"></use></svg><span data-i18n="modal.contact.submit">Enviar por WhatsApp</span></button>
       <p class="form-note" data-i18n="modal.contact.note">Te responderemos en menos de 24 horas</p>
     </form>
     <div class="modal-success" id="salesSuccess" style="display:none;">
-      <div class="success-icon">✅</div>
+      <div class="success-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-circle-check"></use></svg></div>
       <h4 data-i18n="modal.contact.success.title">¡Mensaje enviado!</h4>
       <p data-i18n="modal.contact.success.msg">Te contactaremos por WhatsApp en menos de 24 horas.</p>
       <button class="btn btn-secondary" onclick="closeSalesModal()" data-i18n="modal.contact.success.close">Cerrar</button>

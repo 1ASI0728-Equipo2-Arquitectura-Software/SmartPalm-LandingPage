@@ -22,14 +22,14 @@ const translations = {
     "nav.equipo": "Nosotros",
     "nav.agronomo": "Agrónomo",
     "nav.agricultor": "Agricultor",
-    "nav.badge.farmer": "🌴 Para Agricultores",
-    "nav.badge.agronomist": "🔬 Para Agrónomos",
+    "nav.badge.farmer": "Para Agricultores",
+    "nav.badge.agronomist": "Para Agrónomos",
 
     /* Hero - Home */
-    "hero.badge": "🌴 Solución para la palma aceitera en la Amazonía",
+    "hero.badge": "Solución para la palma aceitera en la Amazonía",
     "hero.title": "Tu palma te avisa cuando te necesita. Tú decides cuando actuar.",
     "hero.subtitle": "SmartPalm te alerta cuando tu palma necesita atención, aunque estés en medio de la Amazonía sin internet.",
-    "hero.cta.primary": "📱 Descargar App",
+    "hero.cta.primary": "Descargar App",
     "hero.cta.secondary": "O conoce a tu ingeniero agrónomo →",
     "hero.badge.floating": "✓ Funciona sin internet",
 
@@ -44,10 +44,10 @@ const translations = {
     "agro.hero.cta.agronomist": "Dashboard Agrónomo →",
 
     /* Hero - Agrónomo */
-    "agroano.hero.badge": "🔬 Para ingenieros agrónomos",
+    "agroano.hero.badge": "Para ingenieros agrónomos",
     "agroano.hero.title": "Supervisa todas tus plantaciones desde un solo lugar",
     "agroano.hero.subtitle": "Dashboard profesional con estado de salud por zona (óptimo, en riesgo y crítico), alertas priorizadas por severidad y reportes técnicos automáticos.",
-    "agroano.hero.cta.primary": "🔬 Acceder al Dashboard",
+    "agroano.hero.cta.primary": "Acceder al Dashboard",
     "agroano.hero.cta.secondary": "Ver cómo funciona ↓",
     "agroano.hero.badge.floating": "✓ Monitoreo 24/7 de todas tus plantaciones",
     "agroano.hero.state.optimal": "óptimo",
@@ -132,11 +132,11 @@ const translations = {
     /* Product Video */
     "agro.video.title": "Mira cómo SmartPalm ayuda a productores como tú",
     "agro.video.placeholder": "Video: SmartPalm para Agricultores",
-    "agro.video.cta": "📱 Descargar App",
+    "agro.video.cta": "Descargar App",
 
     "agroano.video.title": "Mira cómo SmartPalm facilita tu supervisión técnica",
     "agroano.video.placeholder": "Video: SmartPalm para Agrónomos",
-    "agroano.video.cta": "🔬 Acceder al Dashboard",
+    "agroano.video.cta": "Acceder al Dashboard",
 
     /* Selector */
     "selector.title": "¿Con cuál te identificas más?",
@@ -200,7 +200,7 @@ const translations = {
     "agro.pricing.plan2.f4": "Reportes semanales",
     "agro.pricing.plan2.f5": "Gestión por bloques",
     "agro.pricing.plan2.f6": "Acceso para tu asesor",
-    "agro.pricing.plan2.note": "📱 Incluye acceso gratuito para 1 asesor técnico",
+    "agro.pricing.plan2.note": "Incluye acceso gratuito para 1 asesor técnico",
     "agro.pricing.contact": "50+ hectáreas?",
     "agro.pricing.contact.link": "Contactar ventas →",
 
@@ -248,8 +248,8 @@ const translations = {
     /* Footer */
     "footer.cta.title": "¿Listo para optimizar tu gestión?",
     "footer.cta.subtitle": "Únete a la red de agrónomos que ya están transformando la productividad de la palma.",
-    "footer.cta.button": "🔬 Acceder al Dashboard",
-    "footer.cta.button.farmer": "📱 Descargar App",
+    "footer.cta.button": "Acceder al Dashboard",
+    "footer.cta.button.farmer": "Descargar App",
     "footer.brand.desc": "Tecnología satelital e inteligencia artificial aplicada a la supervisión técnica de cultivos tropicales de alto rendimiento.",
     "footer.platform.title": "Plataforma",
     "footer.platform.alerts": "Alertas de Estrés",
@@ -299,7 +299,7 @@ const translations = {
     "modal.contact.field5.opt3": "No estoy seguro",
     "modal.contact.field6": "Cuéntanos más sobre tu fundo (opcional)",
     "modal.contact.field6.placeholder": "Ej: Tengo 3 bloques de palma aceitera en...",
-    "modal.contact.submit": "📱 Enviar por WhatsApp",
+    "modal.contact.submit": "Enviar por WhatsApp",
     "modal.contact.note": "Te responderemos en menos de 24 horas",
     "modal.contact.success.title": "¡Mensaje enviado!",
     "modal.contact.success.msg": "Te contactaremos por WhatsApp en menos de 24 horas.",
@@ -419,14 +419,14 @@ const translations = {
     "nav.equipo": "About",
     "nav.agronomo": "Agronomist",
     "nav.agricultor": "Farmer",
-    "nav.badge.farmer": "🌴 For Farmers",
-    "nav.badge.agronomist": "🔬 For Agronomists",
+    "nav.badge.farmer": "For Farmers",
+    "nav.badge.agronomist": "For Agronomists",
 
     /* Hero - Home */
-    "hero.badge": "🌴 Solution for palm oil in the Peruvian Amazon",
+    "hero.badge": "Solution for palm oil in the Peruvian Amazon",
     "hero.title": "Your palm alerts you when it needs you. You decide when to act.",
     "hero.subtitle": "SmartPalm alerts you when your palm needs attention, even in the middle of the Amazon with no internet.",
-    "hero.cta.primary": "📱 Download App",
+    "hero.cta.primary": "Download App",
     "hero.cta.secondary": "Or meet your agronomist →",
     "hero.badge.floating": "✓ Works without internet",
 
@@ -441,10 +441,10 @@ const translations = {
     "agro.hero.cta.agronomist": "Agronomist Dashboard →",
 
     /* Hero - Agronomist */
-    "agroano.hero.badge": "🔬 For agronomists",
+    "agroano.hero.badge": "For agronomists",
     "agroano.hero.title": "Supervise all your plantations from one place",
     "agroano.hero.subtitle": "Professional dashboard with zone health status (optimal, at risk and critical), severity-ranked alerts, and automatic technical reports.",
-    "agroano.hero.cta.primary": "🔬 Access Dashboard",
+    "agroano.hero.cta.primary": "Access Dashboard",
     "agroano.hero.cta.secondary": "See how it works ↓",
     "agroano.hero.badge.floating": "✓ 24/7 monitoring of all your plantations",
     "agroano.hero.state.optimal": "optimal",
@@ -529,11 +529,11 @@ const translations = {
     /* Product Video */
     "agro.video.title": "See how SmartPalm helps farmers like you",
     "agro.video.placeholder": "Video: SmartPalm for Farmers",
-    "agro.video.cta": "📱 Download App",
+    "agro.video.cta": "Download App",
 
     "agroano.video.title": "See how SmartPalm makes your technical supervision easier",
     "agroano.video.placeholder": "Video: SmartPalm for Agronomists",
-    "agroano.video.cta": "🔬 Access Dashboard",
+    "agroano.video.cta": "Access Dashboard",
 
     /* Selector */
     "selector.title": "Which one describes you best?",
@@ -597,7 +597,7 @@ const translations = {
     "agro.pricing.plan2.f4": "Weekly reports",
     "agro.pricing.plan2.f5": "Block management",
     "agro.pricing.plan2.f6": "Access for your advisor",
-    "agro.pricing.plan2.note": "📱 Includes free access for 1 technical advisor",
+    "agro.pricing.plan2.note": "Includes free access for 1 technical advisor",
     "agro.pricing.contact": "50+ hectares?",
     "agro.pricing.contact.link": "Contact sales →",
 
@@ -645,8 +645,8 @@ const translations = {
     /* Footer */
     "footer.cta.title": "Ready to optimize your management?",
     "footer.cta.subtitle": "Join the network of agronomists already transforming palm productivity.",
-    "footer.cta.button": "🔬 Access Dashboard",
-    "footer.cta.button.farmer": "📱 Download App",
+    "footer.cta.button": "Access Dashboard",
+    "footer.cta.button.farmer": "Download App",
     "footer.brand.desc": "Satellite technology and artificial intelligence applied to technical supervision of high-yield tropical crops.",
     "footer.platform.title": "Platform",
     "footer.platform.alerts": "Stress Alerts",
@@ -696,7 +696,7 @@ const translations = {
     "modal.contact.field5.opt3": "I'm not sure",
     "modal.contact.field6": "Tell us more about your farm (optional)",
     "modal.contact.field6.placeholder": "Ex: I have 3 palm oil blocks in Ucayali...",
-    "modal.contact.submit": "📱 Send via WhatsApp",
+    "modal.contact.submit": "Send via WhatsApp",
     "modal.contact.note": "We'll reply within 24 hours",
     "modal.contact.success.title": "Message sent!",
     "modal.contact.success.msg": "We'll contact you via WhatsApp within 24 hours.",
